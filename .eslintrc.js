@@ -8,6 +8,7 @@ module.exports = {
   extends: ['eslint:recommended', 'plugin:jest/recommended'],
   parserOptions: {
     ecmaVersion: 12,
+    sourcetype: 'module',
   },
   rules: {
     indent: ['error', 2],
