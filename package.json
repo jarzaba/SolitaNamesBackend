@@ -2,9 +2,9 @@
   "name": "solita-names-backend",
   "version": "1.0.0",
   "description": "Backend server for Solita names app",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node index.js",
+    "start": "cross-env NODE_ENV=production node index.ts",
     "dev": "cross-env NODE_ENV=development nodemon index.ts",
     "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
     "build:ui": "rm -rf build && cd ../solita-names_01 && npm run build --prod && cp -r build ../solita-names-backend/",
