@@ -2,10 +2,11 @@
   "name": "solita-names-backend",
   "version": "1.0.0",
   "description": "Backend server for Solita names app",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node-dev index.ts",
     "start": "cross-env NODE_ENV=production node index.ts",
-    "dev": "cross-env NODE_ENV=development nodemon index.ts",
     "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
     "build:ui": "rm -rf build && cd ../solita-names_01 && npm run build --prod && cp -r build ../solita-names-backend/",
     "deploy": "git push heroku main",
@@ -38,5 +39,6 @@
     "supertest": "^6.0.1",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
-  }
+  },
+  "type": "module"
 }
