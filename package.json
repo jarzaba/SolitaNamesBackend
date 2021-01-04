@@ -6,7 +6,7 @@
   "scripts": {
     "tsc": "tsc",
     "dev": "ts-node-dev index.ts",
-    "start": "cross-env NODE_ENV=production node index.ts",
+    "start": "cross-env NODE_ENV=production node dist/index.js",
     "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
     "build:ui": "rm -rf build && cd ../solita-names_01 && npm run build --prod && cp -r build ../solita-names-backend/",
     "deploy": "git push heroku main",
