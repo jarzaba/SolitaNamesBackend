@@ -1,5 +1,5 @@
 require('dotenv').config();
-import config from '../utils/config';
+import { NAMES_URL } from '../utils/config';
 import axios from 'axios';
 import { Router } from 'express';
 
@@ -8,7 +8,7 @@ export const nameRouter = Router();
 nameRouter.get('/', async (request, response) => {
   try {
     const names = await axios
-      .get(config.NAMES_URL!)
+      .get(NAMES_URL!)
       .then((response) => response.data.names);
     response.json(names);
   } catch (error) {
@@ -18,7 +18,7 @@ nameRouter.get('/', async (request, response) => {
 
 nameRouter.get('/:id', async (request, response) => {
   const names = await axios
-    .get(config.NAMES_URL!)
+    .get(NAMES_URL!)
     .then((response) => response.data.names);
   const selectedName = names.find(
     (name: { name: string; amount: number }) =>
