@@ -1,5 +1,4 @@
 import app from './app';
-//const app = require('./app');
 import http from 'http';
 import { PORT } from './utils/config';
 import logger from './utils/logger';
