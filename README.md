@@ -1,6 +1,6 @@
 # Backend for Solita favorite names App
 
-Node.js & Express server with RESTful API
+Node.js & Express server with TypeScript and RESTful API
 
 # Frontend:
 
