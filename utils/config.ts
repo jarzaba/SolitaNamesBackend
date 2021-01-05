@@ -1,5 +1,4 @@
 require('dotenv').config();
 
 export const PORT = process.env.PORT || 3765;
-export const NAMES_URL =
-  'https://raw.githubusercontent.com/solita/dev-academy-2021/main/names.json';
+export const NAMES_URL = process.env.PORT;

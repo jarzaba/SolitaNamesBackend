@@ -9,7 +9,7 @@
     "start": "cross-env NODE_ENV=production node dist/index.js",
     "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
     "build:ui": "rm -rf build && cd ../solita-names_01 && npm run build --prod && cp -r build ../solita-names-backend/",
-    "deploy": "git push heroku main",
+    "deploy": "git push heroku master",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy"
   },
   "author": "Jarkko Bamberg",
