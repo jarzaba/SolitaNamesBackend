@@ -8,9 +8,6 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-morgan.token('req_body', (req: express.Request, res: express.Response) =>
-  JSON.stringify(req.body)
-);
 app.use(morgan('tiny'));
 app.use(express.static('build'));
 app.use(middleware.requestLogger);
