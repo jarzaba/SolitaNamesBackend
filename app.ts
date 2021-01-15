@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
+import 'express-async-errors';
 import { nameRouter } from './controllers/nameRouter';
 import middleware from './utils/middleware';
 
